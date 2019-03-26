@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  CityFood
+//
+//  Created by mac on 2019/2/23.
+//  Copyright © 2019年 Gooou. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCWIDTH ([UIScreen mainScreen].bounds.size.width)//宽度
+#define SCHEIGHT ([UIScreen mainScreen].bounds.size.height)//高度
+#define Height_NavContentBar 44.0f
+#define IS_IPHONE_X (SCHEIGHT == 812.0f) ? YES : NO
+#define Height_NavBar (IS_IPHONE_X==YES) ? 88.0 : 64.0
+
+
+
+#import "AFNetworking.h"
+#import "AFNetworkActivityIndicatorManager.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+
+#endif

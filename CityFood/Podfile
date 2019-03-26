@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+target 'CityFood' do
+  pod 'AFNetworking', '~> 3.2.1'
+  pod 'SDWebImage', '~> 4.4.5'
+  pod 'MJRefresh', '~> 3.1.15.7'
+  pod 'FLAnimatedImage', '~> 1.0.12'
+  pod 'Masonry', '~> 1.1.0'
+  pod 'JSONModel'
+  pod 'BaiduMapKit' #百度地图SDK
+  pod 'BMKLocationKit'
+end
+
+# DO: Fix pods deployment target version warning !!!
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+    end
+  end
+end
