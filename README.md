@@ -7,5 +7,3 @@ I am an iOS beginner,i did it by another software,it named 《Placer》.
 ![第三张效果图](https://github.com/wulonga/CityFood/raw/master/3.png)<br>
 
 
-兵哥哥
-
